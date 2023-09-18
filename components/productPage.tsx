@@ -7,13 +7,13 @@ type ProductDisplayProps = {
 
 const ProductDisplay: React.FC<ProductDisplayProps> = ({ product }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-6 py-6">
       <ProductCard product={product} />
-      <p className="mb-2 whitespace-pre-line">{product.description}</p>
+      <p className="whitespace-pre-line">{product.description}</p>
       <hr className="border-t border-black h-0.5 mb-2" />
-      <p className="mb-2 whitespace-pre-line">{product.materials}</p>
+      <p className="whitespace-pre-line">{product.materials}</p>
       <hr className="border-t border-black h-0.5 mb-2" />
-      <p className="mb-2 whitespace-pre-line">{product.additionalDetails}</p>
+      <p className="whitespace-pre-line">{product.additionalDetails}</p>
       <hr className="border-t border-black h-0.5 mb-2" />
       <p className="text-2xl">${product.price}</p>
     </div>

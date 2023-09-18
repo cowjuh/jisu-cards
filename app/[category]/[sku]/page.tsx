@@ -13,7 +13,7 @@ export default function Page({ params }: { params: { sku: string; category: stri
   return (
     <div>
       <Link href={`/${params.category}`}>
-        <button className="pb-4">{`<- All ${params.category}`}</button>
+        <button>{`<- All ${params.category}`}</button>
       </Link>
       <ProductDisplay product={product} />
     </div>
