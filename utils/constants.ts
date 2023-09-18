@@ -69,7 +69,7 @@ export const PRODUCTS: Product[] = [
     description: `Some see a crescent moon and cross. Some see a sickle and hammer. Together, does that take us to the Mirror of Production? (cr: Baudrillard)`,
     additionalDetails: ADDITIONAL_DETAILS,
     image:
-      "https://v5.airtableusercontent.com/v1/20/20/1695031200000/RJWmKJGGqUaG1s7RPxavqg/cyDjL0mrn2VmDm1UGZrP8G2h4pNQ_lwp8rDVwfiRNCq0HDfaHqFw2USFm4Mmbht-4cCPl9XgHsLHjUeZlV4R_MoVyLx4nNwB7m7Xnm3r_Mw/9UphvZK8cBp4t8z3L7hG5S0eTl9eBewY8Y9Hv8H5Lfs",
+      "https://v5.airtableusercontent.com/v1/20/20/1695031200000/CivRjKxyYqVREiZsf_r-bA/7wh9tfbTzWQF4SqZFUnGYwnGapxnRcZvwsIJieSlULccLqXmi8KJvnAw0_OKzRWof22_qBUfAgM90zZPyJPZPA/y0oxqJFOghMFAtf-yBrhZmS0Ptka-uO6gRWCSDVK_b8",
   },
   {
     name: "unassailable mystery",
@@ -80,7 +80,7 @@ export const PRODUCTS: Product[] = [
     description: `1: “Which of those selves is the real me?” 2: “Why, all of them, of course” 3: “What will it take to shield them all?"`,
     additionalDetails: ADDITIONAL_DETAILS,
     image:
-      "https://v5.airtableusercontent.com/v1/20/20/1695031200000/GhVDdIcHn9emfQ5TgxKoWw/Y8EeG0xjVAmcN6plkwu4wpYJYNP_BJt8xzA4GKsv6KJ19bG3fM-cndWQgY0LTK5AfyywU-u1IMBsdN8mdty0tH9vLkZoqKcMgNjvTnUfzLI/2Tj3g9KQ4FfBTRRLzIzBw1IRi0V8FC2dKQgDIN1kG6s",
+      "https://v5.airtableusercontent.com/v1/20/20/1695031200000/YV4FyS6m66kmBI-E5cUrMg/X4hKRiZiBmSytQ6cGgt6zmdvGlqp-Flq47kDp4PTGQ0KZc3hDcPecqcCjI-IjpEasZw6oeHCA6nSnTbUKoAleA/sPIuGEOeDc-hNOlr1KABOaOaOi2Bvtrx0XKIQu-5qso",
   },
   {
     name: "veiled chimes",
@@ -91,7 +91,7 @@ export const PRODUCTS: Product[] = [
     description: `The clock chimes left, right, left, left, and then right. How much time has moved? Time, “deceiver on a metaphysical level” (quote cr: Cioran)`,
     additionalDetails: ADDITIONAL_DETAILS,
     image:
-      "https://v5.airtableusercontent.com/v1/20/20/1695031200000/Y3M1G7CJgXQGm1YhDgYUWQ/ir0pyQgE7r2m6fO6RZSb1uM0xOh_Mx4wwro0owhCxZ6e8MwqfJPXJlPzCz2kFkI4Htwna-Hz1q_4c-4G4Y3QsEQuUzW0ZEcTPM-AwYjOeBQs/KcPn_1X5xq-uKDE4g7rY5VBLQuS9pUQWBDv6ZUHbRz0",
+      "https://v5.airtableusercontent.com/v1/20/20/1695031200000/y-XwKTPHcIVGjISlyAFKrg/DiNVbWdoVYmRbProKq79RJL1AHUHeKSqrzc6KKLBe3rU7RhZ0xA5X3SP15lPQ4DdPIM-eFTSXglxQb_lYb35VA/aHvYOTjvcmT0x4n7i7hEURwFzXOxG1mWfamrEB4wvU8",
   },
   {
     name: "fragrant purification, extended",
@@ -102,7 +102,7 @@ export const PRODUCTS: Product[] = [
     description: "Imagine a censer, swinging slowly, rousing a purple-grey scent around you.",
     additionalDetails: ADDITIONAL_DETAILS,
     image:
-      "https://v5.airtableusercontent.com/v1/20/20/1695031200000/KZk2kW0XZl0r5tCJwW9TWA/0eNUTYs4hfoK6m3a9iGx8zJcvc0Kmlu-5RQkQ6d7C-lNpg5wTm9sJsdR3KgWfOfMufbMjVbc8oXZC6Rg3OQKjF0Y1znj92X9iX1Kbwuc9yQ/BU3H5JGG4iDxwzGeFt0GpB9RrgT5nYDcO5r6J2zzm1M",
+      "https://v5.airtableusercontent.com/v1/20/20/1695031200000/n1q4SjWMp6Kme-wQmMJBIw/knT_nC-4tXAC803rpW77zOuKIeekSvHDKImWXFrzbYXqom5Zn9ruXBgD_n_hMwfEbdCmN04aNVVszUXyC_CiOA/IzwWJv2Fxu_dxo4WlXXEGwohkZRiOp4ktY3xLU9l25s",
   },
   {
     name: "tethered crescent",

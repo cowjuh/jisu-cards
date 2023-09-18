@@ -23,7 +23,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <div className="w-full">
           <h1 className="text-4xl capitalize">{params.category}</h1>
         </div>
-        <div className="w-full items-start">
+        <div className="flex flex-col w-full items-start gap-4">
           {filteredProducts.map((product) => (
             <ProductCard key={product.sku} product={product} />
           ))}
