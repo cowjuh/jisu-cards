@@ -26,9 +26,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full items-stretch grid-auto-rows-md:auto md:grid-rows-1">
           {filteredProducts.map((product) => (
-            <div className="flex flex-col">
-              <ProductCard key={product.sku} product={product} />
-            </div>
+            <ProductCard key={product.sku} product={product} />
           ))}
         </div>
       </div>
