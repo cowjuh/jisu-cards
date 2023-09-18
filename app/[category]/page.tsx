@@ -24,9 +24,11 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <div className="w-full">
           <h1 className="text-4xl">{upperCase(params.category)}</h1>
         </div>
-        <div className="flex flex-col w-full items-start gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full items-stretch grid-auto-rows-md:auto md:grid-rows-1">
           {filteredProducts.map((product) => (
-            <ProductCard key={product.sku} product={product} />
+            <div className="flex flex-col">
+              <ProductCard key={product.sku} product={product} />
+            </div>
           ))}
         </div>
       </div>
