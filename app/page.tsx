@@ -1,4 +1,3 @@
-import Link from "next/link";
 import CategoryCard from "../components/categoryCard";
 
 export default function Home() {
@@ -14,9 +13,9 @@ export default function Home() {
             of desire, devotion, and the delicate balance of light and shadow.
             <br />
             <br />
-            The motivation to break down these labels and expectations originates from Jisu's own life journey, which
-            diverges from the conventional path of a designer - having attended Harvard Law School over a design school,
-            later transitioning into tech and digital design, ultimately culminating in the creation of JISU.
+            The motivation to break down these labels and expectations originates from Jisu&apos;s own life journey,
+            which diverges from the conventional path of a designer - having attended Harvard Law School over a design
+            school, later transitioning into tech and digital design, ultimately culminating in the creation of JISU.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 w-full items-start">
