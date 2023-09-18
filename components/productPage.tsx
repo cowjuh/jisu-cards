@@ -1,4 +1,5 @@
 import { Product } from "@/utils/constants";
+import ProductCard from "./productCard";
 
 type ProductDisplayProps = {
   product: Product;
@@ -7,8 +8,7 @@ type ProductDisplayProps = {
 const ProductDisplay: React.FC<ProductDisplayProps> = ({ product }) => {
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-4xl">{product.name}</h1>
-      <img src={product.image} alt={product.name} className="w-full h-auto mb-4" />
+      <ProductCard product={product} />
       <p className="mb-2">{product.description}</p>
       <hr className="border-t border-black h-0.5 mb-2" />
       <p className="mb-2">{product.materials}</p>
