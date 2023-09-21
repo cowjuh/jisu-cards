@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <main className={`${instrumentSans.variable} ${inter.variable}`}>
+    <html lang="en" className={`${instrumentSans.variable} ${inter.variable}`}>
+      <main>
         <body className="font-sans">
           <div className="w-full flex min-h-screen flex-col gap-8 items-center">
             <Navbar />
