@@ -1,4 +1,4 @@
-import { PRODUCTS, ProductTypeEnum } from "@/utils/constants";
+import { ProductTypeEnum } from "@/utils/constants";
 import CategoryCard from "../components/categoryCard";
 import { getFirstProduct } from "@/utils/helpers";
 
@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex flex-col items-center">
       <div className="w-full flex flex-col flex-grow gap-16 my-8">
         <div className="w-full flex flex-col gap-4">
-          <h1 className="text-4xl">JISU S/S 23</h1>
+          <h1 className="text-4xl font-serif">JISU S/S 23</h1>
           <p>
             The collection blurs the boundaries between labels, dissolving distinctions such as masculine x feminine,
             sensual x religious, and fact x fiction to embody a dance that is both elegant and laden with palpable

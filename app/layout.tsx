@@ -1,10 +1,14 @@
 import Navbar from "@/components/navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Instrument_Serif } from "next/font/google";
 import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+const instrumentSans = Instrument_Serif({ weight: "400", subsets: ["latin"], variable: "--font-instrument-sans" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,13 +18,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="w-full flex min-h-screen flex-col gap-8 items-center">
-          <Navbar />
-          <div className="w-full px-4 max-w-screen-sm flex-grow">{children}</div>
-          <Footer />
-        </div>
-      </body>
+      <main className={`${inter.variable} ${instrumentSans.variable} font-sans`}>
+        <body className={inter.className}>
+          <div className="w-full flex min-h-screen flex-col gap-8 items-center">
+            <Navbar />
+            <div className="w-full px-4 max-w-screen-sm flex-grow">{children}</div>
+            <Footer />
+          </div>
+        </body>
+      </main>
     </html>
   );
 }

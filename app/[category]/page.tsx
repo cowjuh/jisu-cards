@@ -22,7 +22,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           <button className="mb-4">{`<- All categories`}</button>
         </Link>
         <div className="w-full">
-          <h1 className="text-4xl">{upperCase(params.category)}</h1>
+          <h1 className="text-4xl font-serif">{upperCase(params.category)}</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full items-stretch grid-auto-rows-md:auto md:grid-rows-1">
           {filteredProducts.map((product) => (

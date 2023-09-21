@@ -13,7 +13,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ img, imgAlt, categoryName, 
     <Link href={link}>
       <div className="overflow-hidden bg-[#f3f2f2] flex flex-col justify-center gap-4 items-center px-1 py-6 rounded-lg">
         <Image src={img} alt={imgAlt} id={imgAlt} />
-        <h2 className="text-4xl">{categoryName}</h2>
+        <h2 className="text-4xl font-serif">{categoryName}</h2>
       </div>
     </Link>
   );
