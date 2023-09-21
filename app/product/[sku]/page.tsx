@@ -3,7 +3,7 @@ import { PRODUCTS } from "@/utils/constants";
 import Link from "next/link";
 
 export default function Page({ params }: { params: { sku: string } }) {
-  const product = PRODUCTS.find((p) => p.sku === params.sku);
+  const product = PRODUCTS.find((p) => p.sku.toLowerCase() === params.sku);
 
   // If product with the given SKU is not found, return a message or handle the case accordingly.
   if (!product) {
