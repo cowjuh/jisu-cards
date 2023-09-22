@@ -13,7 +13,7 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
     <div>
       <div className="flex overflow-x-scroll gap-4">
         {images.map((img, i) => (
-          <Dialog>
+          <Dialog key={i}>
             <DialogTrigger asChild>
               <div className="flex-none h-60 w-52 relative max-w-screen-sm sm:h-60 md:h-72 lg:h-80" key={i}>
                 <Image
