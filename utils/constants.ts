@@ -107,7 +107,7 @@ export const PRODUCTS: Product[] = [
     name: "carven mirror",
     sku: "NR002",
     materials: "925 sterling silver. \nCarat total weight .07 (VS clarity).\nMade in New York",
-    price: "1300",
+    price: "1250",
     type: ProductTypeEnum.NECKLACES,
     description: `Some see a crescent moon and cross. Some see a sickle and hammer. Together, does that take us to the Mirror of Production? (cr: Baudrillard)`,
     additionalDetails: ADDITIONAL_DETAILS,
