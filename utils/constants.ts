@@ -10,6 +10,25 @@ import imgER007 from "@/images/product-transparent/ER007_D_MAIN (1).png";
 import imgER014 from "@/images/product-transparent/ER014_D_MAIN.png";
 import imgER013 from "@/images/product-transparent/ER013_D_MAIN_2.png";
 import imgBR005 from "@/images/product-transparent/BR005 - Hero- chain.png";
+
+// Supporting Discipline Images
+import imgSupDiscRG001 from "@/images/product-supporting-discipline/RG001 DSC00741.jpeg";
+import imgSupDiscRG005 from "@/images/product-supporting-discipline/RG005 DSC00233.jpeg";
+import imgSupDiscRG010 from "@/images/product-supporting-discipline/RG010 DSC01146.jpeg";
+import imgSupDiscRG011 from "@/images/product-supporting-discipline/RG011 DSC01127.jpg";
+import imgSupDiscER001 from "@/images/product-supporting-discipline/ER001 DSC09901.jpeg";
+import imgSupDiscER007 from "@/images/product-supporting-discipline/ER007 DSC09455.jpeg";
+import imgSupDiscER014 from "@/images/product-supporting-discipline/ER014 DSC00688.jpeg";
+import imgSupDiscBR005 from "@/images/product-supporting-discipline/BR005 DSC00355.jpeg";
+
+// Supporting Freedom Images
+import imgSupFreeRG001 from "@/images/product-supporting-freedom/RG001 DSC09332.jpeg";
+import imgSupFreeNR003A from "@/images/product-supporting-freedom/NR003 DSC09523.jpeg";
+import imgSupFreeNR003B from "@/images/product-supporting-freedom/NR003 DSC09045 (2).jpeg";
+import imgSupFreeNR005 from "@/images/product-supporting-freedom/NR005 DSC09257.jpeg";
+import imgSupFreeER007 from "@/images/product-supporting-freedom/ER007 edit2-21.jpeg";
+import imgSupFreeER013 from "@/images/product-supporting-freedom/ER013 DSC08974.jpeg";
+
 import { StaticImageData } from "next/image";
 
 export type Product = {
@@ -18,7 +37,9 @@ export type Product = {
   materials: string;
   price: string;
   type: ProductTypeEnum;
-  image: StaticImageData;
+  displayImgDiscipline: StaticImageData;
+  supportingDisciplineImgs: StaticImageData[];
+  supportingFreedomImgs: StaticImageData[];
   description: string;
   additionalDetails: string;
 };
@@ -39,10 +60,11 @@ export const PRODUCTS: Product[] = [
     materials: "925 sterling silver.\nMade in New York.",
     price: "340",
     type: ProductTypeEnum.RINGS,
-    description:
-      "What happened before, when the doors were closed?” \n\nFive pairs of silver doors lie slightly ajar, revealing pairs of black horizontal bars within.",
+    description: "What happened before, when the doors were closed?",
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgRG011,
+    displayImgDiscipline: imgRG011,
+    supportingDisciplineImgs: [imgSupDiscRG011],
+    supportingFreedomImgs: [],
   },
   {
     name: "mutually beneficial deception",
@@ -50,10 +72,11 @@ export const PRODUCTS: Product[] = [
     materials: "925 sterling silver.\nMade in New York.",
     price: "340",
     type: ProductTypeEnum.RINGS,
-    description:
-      "What secrets do the black bars hold?\n\nFive pairs of silver doors languidly close, to conceal a pair of black horizontal bars within.",
+    description: "What secrets do the black bars hold?",
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgRG010,
+    displayImgDiscipline: imgRG010,
+    supportingDisciplineImgs: [imgSupDiscRG010],
+    supportingFreedomImgs: [],
   },
   {
     name: "cherish the transition",
@@ -61,10 +84,11 @@ export const PRODUCTS: Product[] = [
     materials: "925 sterling silver.\nMade in New York.",
     price: "340",
     type: ProductTypeEnum.RINGS,
-    description:
-      "A long-awaited coronation.\n\nFive august dagger-crosses* unfurl their wings. Each cross is flanked by an assembly of curved bars. Below rests a circle that wreathes through the bottom tip of each cross.\n\n*A cross that resembles a dagger in outline and sharpness.",
+    description: "A long-awaited coronation.",
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgRG001,
+    displayImgDiscipline: imgRG001,
+    supportingDisciplineImgs: [imgSupDiscRG001],
+    supportingFreedomImgs: [imgSupFreeRG001],
   },
   {
     name: "which? regression or transcendence",
@@ -73,9 +97,11 @@ export const PRODUCTS: Product[] = [
     price: "360",
     type: ProductTypeEnum.RINGS,
     description:
-      "In which direction does the cross-crescent choose to tilt? Do you regress, or do you rise to transcend?\n\nTwo bands support a tilted cross-crescent formation. A diamond lies in wait, in the middle.",
+      "In which direction does the cross-crescent choose to tilt? Do you regress, or do you rise to transcend?",
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgRG005,
+    displayImgDiscipline: imgRG005,
+    supportingDisciplineImgs: [imgSupDiscRG005],
+    supportingFreedomImgs: [],
   },
   {
     name: "carven mirror",
@@ -85,7 +111,9 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.NECKLACES,
     description: `Some see a crescent moon and cross. Some see a sickle and hammer. Together, does that take us to the Mirror of Production? (cr: Baudrillard)`,
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgNR002,
+    displayImgDiscipline: imgNR002,
+    supportingDisciplineImgs: [],
+    supportingFreedomImgs: [],
   },
   {
     name: "unassailable mystery",
@@ -95,7 +123,9 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.NECKLACES,
     description: `All the selves.`,
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgNR005,
+    displayImgDiscipline: imgNR005,
+    supportingDisciplineImgs: [],
+    supportingFreedomImgs: [imgSupFreeNR005],
   },
   {
     name: "veiled chimes",
@@ -105,7 +135,9 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.NECKLACES,
     description: `The clock chimes left, right, left, left, and then right.  Time: “deceiver on a metaphysical level” (quote cr: Cioran)`,
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgNR003,
+    displayImgDiscipline: imgNR003,
+    supportingDisciplineImgs: [],
+    supportingFreedomImgs: [imgSupFreeNR003A, imgSupFreeNR003B],
   },
   {
     name: "fragrant purification, extended",
@@ -115,7 +147,9 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.EARRINGS,
     description: "Imagine a censer, swinging slowly, rousing a purple-grey scent around you.",
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgER011,
+    displayImgDiscipline: imgER011,
+    supportingFreedomImgs: [],
+    supportingDisciplineImgs: [imgSupDiscER001],
   },
   {
     name: "tethered crescent",
@@ -125,7 +159,9 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.EARRINGS,
     description: `"Never alone."`,
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgER007,
+    displayImgDiscipline: imgER007,
+    supportingDisciplineImgs: [imgSupDiscER007],
+    supportingFreedomImgs: [imgSupFreeER007],
   },
   {
     name: "everyday ashes",
@@ -135,7 +171,9 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.EARRINGS,
     description: `Passing ashes of time.`,
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgER014,
+    displayImgDiscipline: imgER014,
+    supportingDisciplineImgs: [imgSupDiscER014],
+    supportingFreedomImgs: [],
   },
   {
     name: "suspended desire",
@@ -145,7 +183,9 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.EARRINGS,
     description: `“A shiver knits her flesh to mine.” (cr: Arthur Symons)`,
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgER013,
+    displayImgDiscipline: imgER013,
+    supportingDisciplineImgs: [],
+    supportingFreedomImgs: [imgSupFreeER013],
   },
   {
     name: "shifting sutures",
@@ -153,8 +193,10 @@ export const PRODUCTS: Product[] = [
     materials: "925 sterling silver.\nMade in New York.",
     price: "720",
     type: ProductTypeEnum.BRACELETS,
-    description: `“Along these corridors and through these rooms…silent rooms where the sound of footsteps is absorbed by carpets so heavy, so thick, that all sound escapes the ear, as if the very ear of him walks on…” (cr: Last Year at Marienbad, Resnais)\n\nSutures slink across your wrist. One side of the sutures is smooth. The other side is carved in and carpeted with a layer of shadow.`,
+    description: `“Along these corridors and through these rooms…silent rooms where the sound of footsteps is absorbed by carpets so heavy, so thick, that all sound escapes the ear, as if the very ear of him walks on…” (cr: Last Year at Marienbad, Resnais)`,
     additionalDetails: ADDITIONAL_DETAILS,
-    image: imgBR005,
+    displayImgDiscipline: imgBR005,
+    supportingDisciplineImgs: [imgSupDiscBR005],
+    supportingFreedomImgs: [],
   },
 ];

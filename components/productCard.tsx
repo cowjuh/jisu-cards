@@ -12,7 +12,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <Link href={`/product/${product.sku.toLowerCase()}`}>
       <div className="flex flex-col h-full overflow-hidden bg-[#f3f2f2] items-center justify-between gap-4 p-6 rounded-lg">
         <h1 className="text-4xl font-serif">{upperFirst(toLower(product.name))}</h1>
-        <Image src={product.image} alt={product.name} className="w-full h-auto cursor-pointer rounded-md max-w-sm" />
+        <Image
+          src={product.displayImgDiscipline}
+          alt={product.name}
+          className="w-full h-auto cursor-pointer rounded-md max-w-sm"
+        />
       </div>
     </Link>
   );

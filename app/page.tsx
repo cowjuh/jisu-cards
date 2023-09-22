@@ -22,25 +22,25 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 gap-4 w-full items-start">
           <CategoryCard
-            img={getFirstProduct(ProductTypeEnum.EARRINGS).image}
+            img={getFirstProduct(ProductTypeEnum.EARRINGS).displayImgDiscipline}
             imgAlt="earrings"
             categoryName="Earrings"
             link="/earrings"
           />
           <CategoryCard
-            img={getFirstProduct(ProductTypeEnum.NECKLACES).image}
+            img={getFirstProduct(ProductTypeEnum.NECKLACES).displayImgDiscipline}
             imgAlt="necklaces"
             categoryName="Necklaces"
             link="/necklaces"
           />
           <CategoryCard
-            img={getFirstProduct(ProductTypeEnum.BRACELETS).image}
+            img={getFirstProduct(ProductTypeEnum.BRACELETS).displayImgDiscipline}
             imgAlt="Bracelets"
             categoryName="Bracelets"
             link="/bracelets"
           />
           <CategoryCard
-            img={getFirstProduct(ProductTypeEnum.RINGS).image}
+            img={getFirstProduct(ProductTypeEnum.RINGS).displayImgDiscipline}
             imgAlt="rings"
             categoryName="Rings"
             link="/rings"
