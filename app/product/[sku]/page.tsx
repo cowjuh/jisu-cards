@@ -15,7 +15,6 @@ const Page = ({ params }: { params: { sku: string } }) => {
       <Link href={`/${product.type}`}>
         <button>{`<- All ${product.type}`}</button>
       </Link>
-      <div>"heyyyyy</div>
       <ProductDisplay product={product} />
     </div>
   );

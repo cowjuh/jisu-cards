@@ -16,7 +16,7 @@ const CategoryPage = ({ params }: CategoryPageProps) => {
   }
 
   return (
-    <main className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-6">
       <div className="w-full flex flex-col flex-grow gap-6">
         <Link href="/">
           <button className="mb-4">{`<- All categories`}</button>
@@ -30,7 +30,7 @@ const CategoryPage = ({ params }: CategoryPageProps) => {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
