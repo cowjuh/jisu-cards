@@ -19,15 +19,13 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className={`${instrumentSans.variable} ${inter.variable}`}>
-      <main>
-        <body className="font-sans">
-          <div className="w-full flex min-h-screen flex-col gap-8 items-center">
-            <Navbar />
-            <div className="w-full px-4 max-w-screen-sm flex-grow font-sans">{children}</div>
-            <Footer />
-          </div>
-        </body>
-      </main>
+      <body className="font-sans">
+        <div className="w-full flex min-h-screen flex-col gap-8 items-center">
+          <Navbar />
+          <div className="w-full px-4 max-w-screen-sm flex-grow font-sans">{children}</div>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 };

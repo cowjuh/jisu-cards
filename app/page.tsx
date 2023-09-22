@@ -4,7 +4,7 @@ import { getFirstProduct } from "@/utils/helpers";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <div className="w-full flex flex-col flex-grow gap-16 my-8">
         <div className="w-full flex flex-col gap-4">
           <h1 className="text-4xl font-serif">JISU S/S 23</h1>
@@ -47,6 +47,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </main>
+    </div>
   );
 }

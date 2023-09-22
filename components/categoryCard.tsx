@@ -10,12 +10,12 @@ interface CategoryCardProps {
 
 const CategoryCard: React.FC<CategoryCardProps> = ({ img, imgAlt, categoryName, link }) => {
   return (
-    <Link href={link}>
-      <div className="overflow-hidden bg-[#f3f2f2] flex flex-col justify-center gap-4 items-center px-1 py-6 rounded-lg">
+    <div className="overflow-hidden bg-[#f3f2f2] flex flex-col justify-center gap-4 items-center px-1 py-6 rounded-lg">
+      <Link href={link}>
         <Image src={img} alt={imgAlt} id={imgAlt} />
         <h2 className="text-4xl font-serif">{categoryName}</h2>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
