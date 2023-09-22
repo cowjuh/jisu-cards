@@ -8,9 +8,14 @@ type ImageCarouselProps = {
 };
 
 const ImageCarousel = ({ images }: ImageCarouselProps) => {
+  console.log("Image Carousel");
+
+  const handleClick = () => {
+    console.log("clicked");
+  };
   return (
     <div>
-      <div className="flex overflow-x-scroll gap-4">
+      <div className="flex overflow-x-scroll gap-4" onClick={handleClick}>
         {images.map((img, i) => (
           <div className="flex-none h-60 w-52 relative max-w-screen-sm sm:h-60 md:h-72 lg:h-80" key={i}>
             <Image
