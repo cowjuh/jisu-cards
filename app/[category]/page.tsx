@@ -7,7 +7,7 @@ type CategoryPageProps = {
   params: { category: string };
 };
 
-export default function CategoryPage({ params }: CategoryPageProps) {
+const CategoryPage = ({ params }: CategoryPageProps) => {
   const filteredProducts = PRODUCTS.filter((p) => p.type.toLowerCase() === params.category.toLowerCase());
 
   // If no products are found for the given category, return a message or handle the case accordingly.
@@ -32,4 +32,6 @@ export default function CategoryPage({ params }: CategoryPageProps) {
       </div>
     </main>
   );
-}
+};
+
+export default CategoryPage;
