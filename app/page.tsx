@@ -1,8 +1,21 @@
+"use client";
+
 import { ProductTypeEnum } from "@/utils/constants";
 import CategoryCard from "../components/categoryCard";
 import { getFirstProduct } from "@/utils/helpers";
+import { useSiteVersion } from "@/context/SiteVersionContext";
+import { upperFirst } from "lodash";
 
 export default function Home() {
+  const { isDiscipline } = useSiteVersion();
+
+  const productTypes = [
+    ProductTypeEnum.EARRINGS,
+    ProductTypeEnum.NECKLACES,
+    ProductTypeEnum.BRACELETS,
+    ProductTypeEnum.RINGS,
+  ];
+
   return (
     <div className="flex flex-col items-center">
       <div className="w-full flex flex-col flex-grow gap-16 my-8">
@@ -21,30 +34,19 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 w-full items-start">
-          <CategoryCard
-            img={getFirstProduct(ProductTypeEnum.EARRINGS).displayImgDiscipline}
-            imgAlt="earrings"
-            categoryName="Earrings"
-            link="/earrings"
-          />
-          <CategoryCard
-            img={getFirstProduct(ProductTypeEnum.NECKLACES).displayImgDiscipline}
-            imgAlt="necklaces"
-            categoryName="Necklaces"
-            link="/necklaces"
-          />
-          <CategoryCard
-            img={getFirstProduct(ProductTypeEnum.BRACELETS).displayImgDiscipline}
-            imgAlt="Bracelets"
-            categoryName="Bracelets"
-            link="/bracelets"
-          />
-          <CategoryCard
-            img={getFirstProduct(ProductTypeEnum.RINGS).displayImgDiscipline}
-            imgAlt="rings"
-            categoryName="Rings"
-            link="/rings"
-          />
+          {productTypes.map((type) => {
+            const firstProduct = getFirstProduct(type);
+            const imgToDisplay = isDiscipline ? firstProduct.displayImgDiscipline : firstProduct.displayImgFreedom;
+            return (
+              <CategoryCard
+                key={type}
+                img={imgToDisplay}
+                imgAlt={type.toLowerCase()}
+                categoryName={upperFirst(type)}
+                link={`/${type.toLowerCase()}`}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

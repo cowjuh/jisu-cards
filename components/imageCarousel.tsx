@@ -3,12 +3,15 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useSiteVersion } from "@/context/SiteVersionContext";
 
 type ImageCarouselProps = {
   images: StaticImageData[];
 };
 
 const ImageCarousel = ({ images }: ImageCarouselProps) => {
+  const { isDiscipline } = useSiteVersion();
+
   return (
     <div>
       <div className="flex overflow-x-scroll gap-4">
@@ -21,7 +24,7 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
                   alt={`Supporting product image ${i + 1}`}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded"
+                  className={`rounded ${isDiscipline ? "" : "border border-black"}`}
                 />
               </div>
             </DialogTrigger>

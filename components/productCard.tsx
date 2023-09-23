@@ -1,19 +1,32 @@
+"use client";
+
 import Link from "next/link";
 import { Product } from "@/utils/constants";
-import { upperFirst, toLower } from "lodash";
+import { toLower } from "lodash";
 import Image from "next/image";
+import { useSiteVersion } from "@/context/SiteVersionContext";
 
 type ProductCardProps = {
   product: Product;
 };
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const { isDiscipline } = useSiteVersion();
+
   return (
     <Link href={`/product/${product.sku.toLowerCase()}`}>
-      <div className="flex flex-col h-full overflow-hidden bg-[#f3f2f2] items-center justify-between gap-6 p-6 rounded-lg">
-        <h1 className="text-4xl font-serif">{upperFirst(toLower(product.name))}</h1>
+      <div
+        className={`overflow-hidden flex h-full flex-col items-center rounded-lg ${
+          isDiscipline
+            ? "bg-[#f3f2f2] p-6 gap-6 justify-center"
+            : "border border-gray-950 gap-2 justify-between max-w-sm"
+        }`}
+      >
+        <h1 className={`text-4xl font-serif px-4 ${isDiscipline ? "" : "text-center mt-6"}`}>
+          {toLower(product.name)}
+        </h1>
         <Image
-          src={product.displayImgDiscipline}
+          src={isDiscipline ? product.displayImgDiscipline : product.displayImgFreedom}
           alt={product.name}
           className="w-full h-auto cursor-pointer rounded-md max-w-sm"
         />
