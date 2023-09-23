@@ -5,7 +5,7 @@ import React from "react";
 import jisuLogo from "@/images/jisu-logo.png";
 import Link from "next/link";
 import { SiteVersion, useSiteVersion } from "@/context/SiteVersionContext";
-import { set } from "lodash";
+import { set, toUpper } from "lodash";
 
 const Navbar: React.FC = () => {
   const { isDiscipline, setSiteVersion } = useSiteVersion();
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         onClick={handleSwitchSiteVersion}
         className="h-8 border-b border-black flex justify-center text-sm items-center cursor-pointer"
       >
-        Switch to {isDiscipline ? "DISCIPLINE" : "FREEDOM"} {`->`}
+        Switch to {isDiscipline ? toUpper(SiteVersion.FREEDOM) : toUpper(SiteVersion.DISCIPLINE)} {`->`}
       </div>
     </div>
   );
