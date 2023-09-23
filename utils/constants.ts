@@ -1,3 +1,4 @@
+// Transparent Images
 import imgRG011 from "@/images/product-transparent/RG011_Hero_100.png";
 import imgRG010 from "@/images/product-transparent/RG010_Hero.png";
 import imgRG001 from "@/images/product-transparent/RG001_Hero.png";
@@ -10,6 +11,19 @@ import imgER007 from "@/images/product-transparent/ER007_D_MAIN (1).png";
 import imgER014 from "@/images/product-transparent/ER014_D_MAIN.png";
 import imgER013 from "@/images/product-transparent/ER013_D_MAIN_2.png";
 import imgBR005 from "@/images/product-transparent/BR005 - Hero- chain.png";
+
+// Display Freedom Images
+import imgDispFreeBR005 from "@/images/product-display-freedom/BR005.png";
+import imgDispFreeER007 from "@/images/product-display-freedom/ER007.png";
+import imgDispFreeER011 from "@/images/product-display-freedom/ER011.png";
+import imgDispFreeER013 from "@/images/product-display-freedom/ER013.png";
+import imgDispFreeER014 from "@/images/product-display-freedom/ER014.png";
+import imgDispFreeNR002 from "@/images/product-display-freedom/NR002.png";
+import imgDispFreeNR003 from "@/images/product-display-freedom/NR003.png";
+import imgDispFreeNR005 from "@/images/product-display-freedom/NR005.png";
+import imgDispFreeRG001 from "@/images/product-display-freedom/RG001.png";
+import imgDispFreeRG010 from "@/images/product-display-freedom/RG010.png";
+import imgDispFreeRG011 from "@/images/product-display-freedom/RG011.png";
 
 // Supporting Discipline Images
 import imgSupDiscRG001 from "@/images/product-supporting-discipline/RG001 DSC00741.jpeg";
@@ -38,6 +52,7 @@ export type Product = {
   price: string;
   type: ProductTypeEnum;
   displayImgDiscipline: StaticImageData;
+  displayImgFreedom: StaticImageData;
   supportingDisciplineImgs: StaticImageData[];
   supportingFreedomImgs: StaticImageData[];
   description: string;
@@ -63,6 +78,7 @@ export const PRODUCTS: Product[] = [
     description: "What happened before, when the doors were closed?",
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgRG011,
+    displayImgFreedom: imgDispFreeRG011,
     supportingDisciplineImgs: [imgSupDiscRG011],
     supportingFreedomImgs: [],
   },
@@ -75,6 +91,7 @@ export const PRODUCTS: Product[] = [
     description: "What secrets do the black bars hold?",
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgRG010,
+    displayImgFreedom: imgDispFreeRG010,
     supportingDisciplineImgs: [imgSupDiscRG010],
     supportingFreedomImgs: [],
   },
@@ -87,6 +104,7 @@ export const PRODUCTS: Product[] = [
     description: "A long-awaited coronation.",
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgRG001,
+    displayImgFreedom: imgDispFreeRG001,
     supportingDisciplineImgs: [imgSupDiscRG001],
     supportingFreedomImgs: [imgSupFreeRG001],
   },
@@ -100,6 +118,7 @@ export const PRODUCTS: Product[] = [
       "In which direction does the cross-crescent choose to tilt? Do you regress, or do you rise to transcend?",
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgRG005,
+    displayImgFreedom: imgRG005,
     supportingDisciplineImgs: [imgSupDiscRG005],
     supportingFreedomImgs: [],
   },
@@ -112,6 +131,7 @@ export const PRODUCTS: Product[] = [
     description: `Some see a crescent moon and cross. Some see a sickle and hammer. Together, does that take us to the Mirror of Production? (cr: Baudrillard)`,
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgNR002,
+    displayImgFreedom: imgDispFreeNR002,
     supportingDisciplineImgs: [],
     supportingFreedomImgs: [],
   },
@@ -124,6 +144,7 @@ export const PRODUCTS: Product[] = [
     description: `All the selves.`,
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgNR005,
+    displayImgFreedom: imgDispFreeNR005,
     supportingDisciplineImgs: [],
     supportingFreedomImgs: [imgSupFreeNR005],
   },
@@ -136,6 +157,7 @@ export const PRODUCTS: Product[] = [
     description: `The clock chimes left, right, left, left, and then right.  Time: “deceiver on a metaphysical level” (quote cr: Cioran)`,
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgNR003,
+    displayImgFreedom: imgDispFreeNR003,
     supportingDisciplineImgs: [],
     supportingFreedomImgs: [imgSupFreeNR003A, imgSupFreeNR003B],
   },
@@ -148,6 +170,7 @@ export const PRODUCTS: Product[] = [
     description: "Imagine a censer, swinging slowly, rousing a purple-grey scent around you.",
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgER011,
+    displayImgFreedom: imgDispFreeER011,
     supportingFreedomImgs: [],
     supportingDisciplineImgs: [imgSupDiscER001],
   },
@@ -160,6 +183,7 @@ export const PRODUCTS: Product[] = [
     description: `"Never alone."`,
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgER007,
+    displayImgFreedom: imgDispFreeER007,
     supportingDisciplineImgs: [imgSupDiscER007],
     supportingFreedomImgs: [imgSupFreeER007],
   },
@@ -172,6 +196,7 @@ export const PRODUCTS: Product[] = [
     description: `Passing ashes of time.`,
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgER014,
+    displayImgFreedom: imgDispFreeER014,
     supportingDisciplineImgs: [imgSupDiscER014],
     supportingFreedomImgs: [],
   },
@@ -184,6 +209,7 @@ export const PRODUCTS: Product[] = [
     description: `“A shiver knits her flesh to mine.” (cr: Arthur Symons)`,
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgER013,
+    displayImgFreedom: imgDispFreeER013,
     supportingDisciplineImgs: [],
     supportingFreedomImgs: [imgSupFreeER013],
   },
@@ -196,6 +222,7 @@ export const PRODUCTS: Product[] = [
     description: `“Along these corridors and through these rooms…silent rooms where the sound of footsteps is absorbed by carpets so heavy, so thick, that all sound escapes the ear, as if the very ear of him walks on…” (cr: Last Year at Marienbad, Resnais)`,
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgBR005,
+    displayImgFreedom: imgDispFreeBR005,
     supportingDisciplineImgs: [imgSupDiscBR005],
     supportingFreedomImgs: [],
   },
