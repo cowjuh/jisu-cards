@@ -1,13 +1,12 @@
 "use client";
 
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 export enum SiteVersion {
   DISCIPLINE = "discipline",
   FREEDOM = "freedom",
 }
 
-// Create Context
 const SiteVersionContext = createContext<
   | {
       siteVersion: SiteVersion;
@@ -17,10 +16,16 @@ const SiteVersionContext = createContext<
   | undefined
 >(undefined);
 
-// Provider Component
 export const SiteVersionProvider = ({ children }: { children: React.ReactNode }) => {
   const [siteVersion, setSiteVersion] = useState<SiteVersion>(SiteVersion.FREEDOM);
   const isDiscipline = siteVersion === SiteVersion.DISCIPLINE;
+
+  useEffect(() => {
+    const storedSiteVersion = localStorage.getItem("siteVersion");
+    if (storedSiteVersion) {
+      setSiteVersion(storedSiteVersion as SiteVersion);
+    }
+  }, []);
 
   return (
     <SiteVersionContext.Provider value={{ siteVersion, setSiteVersion, isDiscipline }}>
@@ -29,7 +34,6 @@ export const SiteVersionProvider = ({ children }: { children: React.ReactNode })
   );
 };
 
-// Custom Hook to use Context
 export const useSiteVersion = () => {
   const context = useContext(SiteVersionContext);
   if (!context) {
