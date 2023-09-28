@@ -11,6 +11,7 @@ import imgER007 from "@/images/product-transparent/ER007_D_MAIN (1).png";
 import imgER014 from "@/images/product-transparent/ER014_D_MAIN.png";
 import imgER013 from "@/images/product-transparent/ER013_D_MAIN_2.png";
 import imgBR005 from "@/images/product-transparent/BR005 - Hero- chain.png";
+import imgBR002 from "@/images/product-transparent/BR002_Hero.png";
 
 // Display Freedom Images
 import imgDispFreeBR005 from "@/images/product-display-freedom/BR005.png";
@@ -225,5 +226,18 @@ export const PRODUCTS: Product[] = [
     displayImgFreedom: imgDispFreeBR005,
     supportingDisciplineImgs: [imgSupDiscBR005],
     supportingFreedomImgs: [],
+  },
+  {
+    name: "roots of tears",
+    sku: "BR002",
+    materials: "925 sterling silver.\nMade in New York.",
+    price: "600",
+    type: ProductTypeEnum.BRACELETS,
+    description: `Slender roots stem from a cross, whose center is framed by eight delicate thorns. Two roots glide from one side of the cross, one root on the other.`,
+    additionalDetails: ADDITIONAL_DETAILS,
+    displayImgDiscipline: imgBR002,
+    displayImgFreedom: imgBR002,
+    supportingDisciplineImgs: [imgBR002],
+    supportingFreedomImgs: [imgBR002],
   },
 ];
