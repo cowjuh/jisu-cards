@@ -13,6 +13,20 @@ import imgER013 from "@/images/product-transparent/ER013_D_MAIN_2.png";
 import imgBR005 from "@/images/product-transparent/BR005 - Hero- chain.png";
 import imgBR002 from "@/images/product-transparent/BR002_Hero.png";
 
+// Display Discipline Images
+import imgDispDiscBR005 from "@/images/product-display-discipline/BR005.png";
+import imgDispDiscBR002 from "@/images/product-display-discipline/BR002.png";
+import imgDispDiscER007 from "@/images/product-display-discipline/ER007.png";
+import imgDispDiscER011 from "@/images/product-display-discipline/ER011.png";
+import imgDispDiscER013 from "@/images/product-display-discipline/ER013.png";
+import imgDispDiscER014 from "@/images/product-display-discipline/ER014.png";
+import imgDispDiscNR002 from "@/images/product-display-discipline/NR002.png";
+import imgDispDiscNR003 from "@/images/product-display-discipline/NR003.png";
+import imgDispDiscNR005 from "@/images/product-display-discipline/NR005.png";
+import imgDispDiscRG001 from "@/images/product-display-discipline/RG001.png";
+import imgDispDiscRG010 from "@/images/product-display-discipline/RG010.png";
+import imgDispDiscRG011 from "@/images/product-display-discipline/RG011.png";
+
 // Display Freedom Images
 import imgDispFreeER007 from "@/images/product-display-freedom/ER007.png";
 import imgDispFreeER011 from "@/images/product-display-freedom/ER011.png";
@@ -81,7 +95,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.RINGS,
     description: "What happened before, when the doors were closed?",
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgRG011,
+    displayImgDiscipline: imgDispDiscRG011,
     displayImgFreedom: imgDispFreeRG011,
     supportingDisciplineImgs: [imgSupDiscRG011],
     supportingFreedomImgs: [],
@@ -94,7 +108,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.RINGS,
     description: "What secrets do the black bars hold?",
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgRG010,
+    displayImgDiscipline: imgDispDiscRG010,
     displayImgFreedom: imgDispFreeRG010,
     supportingDisciplineImgs: [imgSupDiscRG010],
     supportingFreedomImgs: [],
@@ -107,7 +121,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.RINGS,
     description: "A long-awaited coronation.",
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgRG001,
+    displayImgDiscipline: imgDispDiscRG001,
     displayImgFreedom: imgDispFreeRG001,
     supportingDisciplineImgs: [imgSupDiscRG001],
     supportingFreedomImgs: [imgSupFreeRG001],
@@ -134,7 +148,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.NECKLACES,
     description: `Some see a crescent moon and cross. Some see a sickle and hammer. Together, does that take us to the Mirror of Production? (cr: Baudrillard)`,
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgNR002,
+    displayImgDiscipline: imgDispDiscNR002,
     displayImgFreedom: imgDispFreeNR002,
     supportingDisciplineImgs: [],
     supportingFreedomImgs: [],
@@ -147,7 +161,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.NECKLACES,
     description: `All the selves.`,
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgNR005,
+    displayImgDiscipline: imgDispDiscNR005,
     displayImgFreedom: imgDispFreeNR005,
     supportingDisciplineImgs: [],
     supportingFreedomImgs: [imgSupFreeNR005],
@@ -160,7 +174,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.NECKLACES,
     description: `The clock chimes left, right, left, left, and then right.  Time: “deceiver on a metaphysical level” (quote cr: Cioran)`,
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgNR003,
+    displayImgDiscipline: imgDispDiscNR003,
     displayImgFreedom: imgDispFreeNR003,
     supportingDisciplineImgs: [],
     supportingFreedomImgs: [imgSupFreeNR003A, imgSupFreeNR003B],
@@ -173,7 +187,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.EARRINGS,
     description: "Imagine a censer, swinging slowly, rousing a purple-grey scent around you.",
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgER011,
+    displayImgDiscipline: imgDispDiscER011,
     displayImgFreedom: imgDispFreeER011,
     supportingFreedomImgs: [],
     supportingDisciplineImgs: [imgSupDiscER001],
@@ -186,7 +200,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.EARRINGS,
     description: `"Never alone."`,
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgER007,
+    displayImgDiscipline: imgDispDiscER007,
     displayImgFreedom: imgDispFreeER007,
     supportingDisciplineImgs: [imgSupDiscER007],
     supportingFreedomImgs: [imgSupFreeER007],
@@ -199,7 +213,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.EARRINGS,
     description: `Passing ashes of time.`,
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgER014,
+    displayImgDiscipline: imgDispDiscER014,
     displayImgFreedom: imgDispFreeER014,
     supportingDisciplineImgs: [imgSupDiscER014],
     supportingFreedomImgs: [],
@@ -212,7 +226,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.EARRINGS,
     description: `“A shiver knits her flesh to mine.” (cr: Arthur Symons)`,
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgER013,
+    displayImgDiscipline: imgDispDiscER013,
     displayImgFreedom: imgDispFreeER013,
     supportingDisciplineImgs: [],
     supportingFreedomImgs: [imgSupFreeER013],
@@ -225,7 +239,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.BRACELETS,
     description: `“Along these corridors and through these rooms…silent rooms where the sound of footsteps is absorbed by carpets so heavy, so thick, that all sound escapes the ear, as if the very ear of him walks on…” (cr: Last Year at Marienbad, Resnais)`,
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgBR005,
+    displayImgDiscipline: imgDispDiscBR005,
     displayImgFreedom: imgDispFreeBR005,
     supportingDisciplineImgs: [imgSupDiscBR005],
     supportingFreedomImgs: [],
@@ -238,7 +252,7 @@ export const PRODUCTS: Product[] = [
     type: ProductTypeEnum.BRACELETS,
     description: `Slender roots stem from a cross, whose center is framed by eight delicate thorns. Two roots glide from one side of the cross, one root on the other.`,
     additionalDetails: ADDITIONAL_DETAILS,
-    displayImgDiscipline: imgBR002,
+    displayImgDiscipline: imgDispDiscBR002,
     displayImgFreedom: imgDispFreeBR002,
     supportingDisciplineImgs: [imgSupDiscBR002],
     supportingFreedomImgs: [imgSupFreeBR002],

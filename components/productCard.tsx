@@ -16,15 +16,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <Link href={`/product/${product.sku.toLowerCase()}`}>
       <div
-        className={`overflow-hidden flex h-full flex-col items-center rounded-lg ${
-          isDiscipline
-            ? "bg-[#f3f2f2] p-6 gap-6 justify-center"
-            : "border border-gray-950 gap-2 justify-between max-w-sm"
-        }`}
+        className={`overflow-hidden flex h-full flex-col items-center rounded-lg border border-gray-950 gap-2 justify-between max-w-sm`}
       >
-        <h1 className={`text-4xl font-serif px-4 ${isDiscipline ? "" : "text-center mt-6"}`}>
-          {toLower(product.name)}
-        </h1>
+        <h1 className={`text-4xl font-serif px-4 text-center mt-6`}>{toLower(product.name)}</h1>
         <Image
           src={isDiscipline ? product.displayImgDiscipline : product.displayImgFreedom}
           alt={product.name}
