@@ -14,7 +14,6 @@ import imgBR005 from "@/images/product-transparent/BR005 - Hero- chain.png";
 import imgBR002 from "@/images/product-transparent/BR002_Hero.png";
 
 // Display Freedom Images
-import imgDispFreeBR005 from "@/images/product-display-freedom/BR005.png";
 import imgDispFreeER007 from "@/images/product-display-freedom/ER007.png";
 import imgDispFreeER011 from "@/images/product-display-freedom/ER011.png";
 import imgDispFreeER013 from "@/images/product-display-freedom/ER013.png";
@@ -25,6 +24,8 @@ import imgDispFreeNR005 from "@/images/product-display-freedom/NR005.png";
 import imgDispFreeRG001 from "@/images/product-display-freedom/RG001.png";
 import imgDispFreeRG010 from "@/images/product-display-freedom/RG010.png";
 import imgDispFreeRG011 from "@/images/product-display-freedom/RG011.png";
+import imgDispFreeBR005 from "@/images/product-display-freedom/BR005.png";
+import imgDispFreeBR002 from "@/images/product-display-freedom/BR002.png";
 
 // Supporting Discipline Images
 import imgSupDiscRG001 from "@/images/product-supporting-discipline/RG001 DSC00741.jpeg";
@@ -35,6 +36,7 @@ import imgSupDiscER001 from "@/images/product-supporting-discipline/ER001 DSC099
 import imgSupDiscER007 from "@/images/product-supporting-discipline/ER007 DSC09455.jpeg";
 import imgSupDiscER014 from "@/images/product-supporting-discipline/ER014 DSC00688.jpeg";
 import imgSupDiscBR005 from "@/images/product-supporting-discipline/BR005 DSC00355.jpeg";
+import imgSupDiscBR002 from "@/images/product-supporting-discipline/BR002 DSC00526.jpeg";
 
 // Supporting Freedom Images
 import imgSupFreeRG001 from "@/images/product-supporting-freedom/RG001 DSC09332.jpeg";
@@ -43,6 +45,7 @@ import imgSupFreeNR003B from "@/images/product-supporting-freedom/NR003 DSC09045
 import imgSupFreeNR005 from "@/images/product-supporting-freedom/NR005 DSC09257.jpeg";
 import imgSupFreeER007 from "@/images/product-supporting-freedom/ER007 edit2-21.jpeg";
 import imgSupFreeER013 from "@/images/product-supporting-freedom/ER013 DSC08974.jpeg";
+import imgSupFreeBR002 from "@/images/product-supporting-freedom/BR002 DSC09423.jpeg";
 
 import { StaticImageData } from "next/image";
 
@@ -236,8 +239,8 @@ export const PRODUCTS: Product[] = [
     description: `Slender roots stem from a cross, whose center is framed by eight delicate thorns. Two roots glide from one side of the cross, one root on the other.`,
     additionalDetails: ADDITIONAL_DETAILS,
     displayImgDiscipline: imgBR002,
-    displayImgFreedom: imgBR002,
-    supportingDisciplineImgs: [imgBR002],
-    supportingFreedomImgs: [imgBR002],
+    displayImgFreedom: imgDispFreeBR002,
+    supportingDisciplineImgs: [imgSupDiscBR002],
+    supportingFreedomImgs: [imgSupFreeBR002],
   },
 ];
